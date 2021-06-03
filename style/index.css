@@ -224,6 +224,9 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+.profileText p{
+    color: white;
+}
 
 /* Gallery */
 .gallery .gallCells {
