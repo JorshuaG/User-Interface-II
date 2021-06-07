@@ -1,1 +1,362 @@
-/* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* General Styles */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+  font-size: 1.8rem;
+  color: #444242;
+  line-height: 1.5;
+  font-family: font-family: 'Mate SC', serif;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  
+  font-family: 'Mate SC', serif;
+}
+h1 {
+  color: black;
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+section {
+  padding: 4% 0;
+}
+a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+* {
+  /* border: 1px solid transparent; */
+  box-sizing: border-box;
+}
+
+/* Nav Bar */
+header {
+  width: 100%;
+  background-color: dimgray;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin-left: 10px;
+}
+.navLinks {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.navLinks a {
+  text-align: center;
+  border: 1px solid darkslategrey;
+  background-color: gainsboro;
+  width: 100px;
+  color: red;
+}
+
+.navLinks a:first-child {
+  background-color: black;
+  color: white;
+}
+
+/* Top Profile */
+
+.topProfile {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.profileProject {
+  text-align: center;
+  border: 1px solid darkslategrey;
+  background-color: red;
+  width: 150px;
+  color: black;
+  border-radius: 25px;
+}
+.leftProfile {
+  background-image: url("https://images.unsplash.com/photo-1622116626849-8566a95d3aac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 40%;
+  border: 2px solid red;
+}
+.rightProfile {
+  width: 40%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+/* .coverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.profileText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.profileText p{
+    color:
+}
+
+/* Gallery */
+.gallery .gallCells {
+  height: 35vh;
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+}
+.cell {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border: 2px solid red;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallCells h3 {
+  text-align: center;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: dimgray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+footer a {
+  text-align: center;
+  border: 1px solid darkslategrey;
+  background-color: black;
+  width: 150px;
+  border-radius: 25px;
+  color: red;
+}
+footer h2 {
+  color: black;
+}
+
+
+/* responsive design styling */
+
+@media (max-width: 500px){
+ /* header */
+  .navLinks{
+    flex-direction: column;
+    
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .navLinks a{
+    width: 30%;
+  }
+  h1{
+    margin: 0;
+    text-align: center;
+  }
+  /* Top profile */
+  .topProfile{
+    height: auto;
+    flex-direction: column;
+    padding: 5% 0;
+  } 
+  .leftProfile{
+      height: 50vh;
+      width: 80%;
+  }
+  .rightProfile{
+    height: 40vh;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
+  .rightProfile h2{
+    font-size: 2.8rem; 
+  }
+  .rightProfile p{
+    font-size: 1.6rem;
+  }
+  .profileText{
+    justify-content: center;
+    align-items: center;
+  }
+  /* gallery */
+  .gallery{
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .projectContent{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .gallCells{
+    height: 30vh;
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px){
+  .topProfile{
+    flex-direction: column;
+    height: auto;
+  }
+  .leftProfile{
+    width: 80%;
+    height: 40vh;
+  }
+  .rightProfile{
+    width: 80%;
+  }
+  .profileText{
+    text-align: center;
+  }
+ 
+}
